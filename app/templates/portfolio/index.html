@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bienvenido
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class='hero-content'>
+        <div class="left">
+            <h1>Soy Desarrollador</h1>
+            <h1>Gerardo Muñoz</h1>
+            <p> Construyo aplicaciones dimanicas en Python utlizando bases de datos relacionales. </p>
+            <a href="#contacto" class="btn">Contactame</a>
+        </div>
+        <div class="right">
+            <img src='{{ url_for('static', filename='logo1.png') }}' width=600px />
+        </div>
+    </div>
+</div>
+{% include 'portfolio/section-first.html' %} 
+{% include 'portfolio/section-second.html' %} 
+{% include 'portfolio/section-third.html' %} 
+{% endblock %}
